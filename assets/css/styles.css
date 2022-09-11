@@ -1,0 +1,28 @@
+* {
+  font-family: "Plus Jakarta Sans";
+}
+.wr {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.2px);
+  -webkit-backdrop-filter: blur(7.2px);
+  border: 1px solid rgba(255, 255, 255, 0.36);
+}
+
+.imgfloat {
+  max-width: 80px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+.floatingThing {
+    width: 240px;
+  position: fixed;
+  z-index: 9;
+  right: -132px;
+  bottom: 42px;
+  transition: 0.25s ease-in;
+}
+.floatingThing:hover {
+    transition: 0.25s ease-out;
+    right: -42px;
+}
