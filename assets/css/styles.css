@@ -1,3 +1,8 @@
+:root {
+  --red-nfal: #ca3e47;
+  --black-nfal: #313131;
+  --white-nfal: #eeeeee;
+}
 * {
   font-family: "Plus Jakarta Sans";
 }
@@ -22,14 +27,29 @@
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
 }
 .floatingThing {
-    width: 240px;
+  width: 240px;
   position: fixed;
   z-index: 9;
   right: -132px;
   bottom: 42px;
   transition: 0.25s ease-in;
 }
+.text-nfal-white {
+  color: var(--white-nfal) !important;
+}
 .floatingThing:hover {
-    transition: 0.25s ease-out;
-    right: -42px;
+  transition: 0.25s ease-out;
+  right: -42px;
+}
+.social {
+  max-height: 42px;
+}
+.filter-for-light {
+  filter: invert(17%) sepia(0%) saturate(1225%) hue-rotate(262deg)
+    brightness(101%) contrast(93%);
+}
+
+.filter-for-dark {
+  filter: invert(100%) sepia(4%) saturate(73%) hue-rotate(166deg)
+    brightness(113%) contrast(87%);
 }
