@@ -2,6 +2,8 @@
   --red-nfal: #ca3e47;
   --black-nfal: #313131;
   --white-nfal: #eeeeee;
+  --blue-nfal: #1363df;
+  --blue-nfal-rgb: 19, 99, 223;
 }
 * {
   font-family: "Plus Jakarta Sans";
@@ -52,4 +54,12 @@
 .filter-for-dark {
   filter: invert(100%) sepia(4%) saturate(73%) hue-rotate(166deg)
     brightness(113%) contrast(87%);
+}
+
+.bg-nfal-blue {
+  background-color: var(--blue-nfal) !important;
+}
+.brd-nfal-blue {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--blue-nfal-rgb), var(--bs-border-opacity)) !important;
 }
