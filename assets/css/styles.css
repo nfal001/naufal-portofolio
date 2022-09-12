@@ -42,6 +42,13 @@
 .text-nfal-white {
   color: var(--white-nfal) !important;
 }
+.scalar {
+  transition: 0.08s ease-in;
+}
+.scalar:hover{
+  scale: 1.1;
+  transition: 0.2s ease-out;
+}
 .floatingThing:hover {
   transition: 0.25s ease-out;
   right: -42px;
@@ -49,7 +56,11 @@
 .social {
   max-height: 42px;
 }
+
 .filter-for-light {
+  filter: invert(33%) sepia(0%) saturate(0%) hue-rotate(95deg) brightness(99%) contrast(86%);
+}
+.filter-for-light:hover {
   filter: invert(17%) sepia(0%) saturate(1225%) hue-rotate(262deg)
     brightness(101%) contrast(93%);
 }
